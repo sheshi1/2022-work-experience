@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>My website</title>
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./clock.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li class="active"><a href="../clock/clock.html">Clock</a></li>
+        <li><a href="../pomodoro/pomodoro.html">Pomodoro</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <h1>Clock</h1>
+
+      <p>Displays the current time on a simple digital clock</p>
+
+      <div id="clock" class="clock">
+        <div class="display-panel">
+          <div id="hour" class="display">00</div>
+          <div class="divider">:</div>
+          <div id="minute" class="display">00</div>
+          <div class="divider">:</div>
+          <div id="second" class="display">00</div>
+          <div class="divider"></div>
+          <div id="period" class="display">AM</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Import the clock.js script so it can be run on this page -->
+    <script src="./clock.js"></script>
+  </body>
+</html>

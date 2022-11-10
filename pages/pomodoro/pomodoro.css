@@ -1,0 +1,32 @@
+/* Center all the elements with these class names */
+.clock,
+.display-panel,
+.display,
+.divider {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  /* Shrink this element so it only just fits its contents and no bigger or smaller */
+  width: fit-content;
+  padding: 20px;
+  border: 1px solid #333;
+  color: white;
+}
+
+.display-panel {
+  width: 150px;
+  padding: 5px;
+  background: #333;
+}
+
+.display {
+  width: 20px;
+}
+
+.divider {
+  width: 10px;
+}

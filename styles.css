@@ -1,0 +1,67 @@
+/*
+ * Layout styles
+ */
+* {
+  /* Add fonts to all elements */
+  font-family: system-ui, sans-serif;
+}
+
+html,
+body {
+  /* Reset the browser's default styles */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+}
+
+/*
+ * Nav bar styles
+ * https://www.w3schools.com/css/css_navbar_horizontal.asp
+ */
+.navigation {
+  display: flex;
+  background-color: #6e46ae;
+}
+
+.navigation ul {
+  background: red;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navigation li {
+  float: left;
+}
+
+.navigation li a:hover {
+  /* Change the link color to #111 (black) on hover */
+  background-color: #222;
+}
+
+.navigation li.active {
+  background-color: black;
+}
+
+.navigation a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*
+ * Main content styles
+ *
+ */
+.main {
+  padding: 20px;
+}

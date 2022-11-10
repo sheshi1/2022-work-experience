@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>My website</title>
+
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="stylesheet" href="./pomodoro.css" />
+  </head>
+  <body>
+    <div class="navigation">
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="../clock/clock.html">Clock</a></li>
+        <li class="active"><a href="../pomodoro/pomodoro.html">Pomodoro</a></li>
+      </ul>
+    </div>
+
+    <div class="main">
+      <h1>Pomodoro</h1>
+
+      <p>
+        Fill in the blanks in the <b>pomodoro.js</b> file to make the Pomodoro
+        timer work as follows:
+      </p>
+      <ul>
+        <li>Every X minutes, show work time</li>
+        <li>Every Y minutes, show break time</li>
+      </ul>
+
+      <div id="clock" class="clock">
+        <div class="display-panel">
+          <div id="hour" class="display">00</div>
+          <div class="divider">:</div>
+          <div id="minute" class="display">00</div>
+          <div class="divider">:</div>
+          <div id="second" class="display">00</div>
+          <div class="divider"></div>
+          <div id="period" class="display">AM</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Since we already wrote some code to display a clock in clock.js,
+      we can import it so this page can reuse the same code too -->
+    <script src="../clock/clock.js"></script>
+    <script src="./pomodoro.js"></script>
+  </body>
+</html>
