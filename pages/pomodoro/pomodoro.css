@@ -1,32 +1,34 @@
-/* Center all the elements with these class names */
-.clock,
-.display-panel,
-.display,
-.divider {
+.break-time-container {
+  width: 200px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.work-time,
+.break-time {
   display: flex;
-  flex-flow: row;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  color: black;
 }
 
-.clock {
-  /* Shrink this element so it only just fits its contents and no bigger or smaller */
-  width: fit-content;
-  padding: 20px;
-  border: 1px solid #333;
-  color: white;
+.work-time {
+  /* 
+   * Add some background color and any other decorative means
+   * to make it visually different from break-time
+   */
 }
 
-.display-panel {
-  width: 150px;
-  padding: 5px;
-  background: #333;
+.break-time {
+  /* 
+   * Add some background color and any other decorative means
+   * to make it visually different from work-time
+   */
 }
 
-.display {
-  width: 20px;
-}
-
-.divider {
-  width: 10px;
+.hidden {
+  display: none;
 }

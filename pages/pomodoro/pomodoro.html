@@ -3,6 +3,8 @@
     <title>My website</title>
 
     <link rel="stylesheet" href="../../styles.css" />
+    <!-- Import the clock.css on this page so we can reuse its code -->
+    <link rel="stylesheet" href="../clock/clock.css" />
     <link rel="stylesheet" href="./pomodoro.css" />
   </head>
   <body>
@@ -28,20 +30,16 @@
 
       <div id="clock" class="clock">
         <div class="display-panel">
-          <div id="hour" class="display">00</div>
-          <div class="divider">:</div>
-          <div id="minute" class="display">00</div>
-          <div class="divider">:</div>
-          <div id="second" class="display">00</div>
-          <div class="divider"></div>
-          <div id="period" class="display">AM</div>
+          <div id="second" class="display">0</div>
         </div>
+      </div>
+
+      <div class="break-time-container">
+        <div id="work-time" class="work-time">Work time!</div>
+        <div id="break-time" class="break-time hidden">Break time!</div>
       </div>
     </div>
 
-    <!-- Since we already wrote some code to display a clock in clock.js,
-      we can import it so this page can reuse the same code too -->
-    <script src="../clock/clock.js"></script>
     <script src="./pomodoro.js"></script>
   </body>
 </html>

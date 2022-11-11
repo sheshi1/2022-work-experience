@@ -1,6 +1,6 @@
-/*
+/*******************************
  * Layout styles
- */
+ *******************************/
 * {
   /* Add fonts to all elements */
   font-family: system-ui, sans-serif;
@@ -19,10 +19,10 @@ body {
   width: 100%;
 }
 
-/*
+/*******************************
  * Nav bar styles
  * https://www.w3schools.com/css/css_navbar_horizontal.asp
- */
+ *******************************/
 .navigation {
   display: flex;
   background-color: #6e46ae;
@@ -58,10 +58,9 @@ body {
   text-decoration: none;
 }
 
-/*
+/*******************************
  * Main content styles
- *
- */
+ *******************************/
 .main {
   padding: 20px;
 }
